@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+      .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .designBox {
+        width: 1440px;
+        height: 800px;
+        background-color: hsl(233, 47%, 7%);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      .grid {
+        background-color: hsl(244, 38%, 16%);
+        width: 80%;
+        height: 60%;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      #text {
+        color: white;
+        margin: 71px 70px 59px 111px;
+      }
+      #title {
+        font-family: "Inter", sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+      }
+      #body {
+        margin-top: 25px;
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        color: hsla(0, 0%, 100%, 0.75);
+        line-height: 25px;
+        letter-spacing: 0.002em;
+      }
+      .purpleTxt {
+        color: hsl(277, 64%, 61%);
+      }
+
+      .stats {
+        margin-top: 73px;
+        display: flex;
+        justify-content: flex-start;
+      }
+      .stats .spacer {
+        width: 64px;
+      }
+      .stats .stat .amount {
+        color: white;
+        font-family: "Inter", sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 25px;
+      }
+      .stats .stat .subtext {
+        color: hsla(0, 0%, 100%, 0.6);
+        font-family: "Lexend Deca", sans-serif;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 25px;
+        letter-spacing: 0.09em;
+      }
+
+      #img {
+        position: relative;
+        justify-content: flex-end;
+        align-items: flex-end;
+        background-image: url("./images/image-header-desktop.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border-radius: 0 10px 10px 0;
+      }
+      #img img {
+        height: 100%;
+        position: absolute;
+        border-radius: 0 10px 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="designBox">
+        <div class="grid">
+          <div id="text">
+            <div id="title">
+              Get <span class="purpleTxt">insights</span> that help your
+              business grow.
+            </div>
+            <div id="body">
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience, and overall efficiency.
+            </div>
+            <div class="stats">
+              <div class="stat">
+                <div class="amount">10k+</div>
+                <div class="subtext">COMPANIES</div>
+              </div>
+              <div class="spacer"></div>
+              <div class="stat">
+                <div class="amount">314</div>
+                <div class="subtext">TEMPLATES</div>
+              </div>
+              <div class="spacer"></div>
+              <div class="stat">
+                <div class="amount">12M+</div>
+                <div class="subtext">QUERIES</div>
+              </div>
+            </div>
+          </div>
+          <div id="img">
+            <!-- <img src="./images/image-header-desktop.jpg" /> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Matthew Stringer</a>.
+    </div>
+  </body>
+</html>
